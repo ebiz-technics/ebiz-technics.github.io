@@ -397,6 +397,8 @@ body.menu-open { overflow: hidden; }
 .service-card .card-icon { position: absolute; left: 24px; bottom: -22px; z-index: 2; margin: 0; background: var(--surface-solid); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm); }
 .service-card .sc-body { padding: 36px 26px 26px; display: flex; flex-direction: column; flex: 1; }
 .service-card .sc-body p { flex: 1; }
+.service-card .sc-body p:has(+ .check-list) { flex: 0 0 auto; }
+.service-card .sc-body .check-list { flex: 1; align-content: start; }
 
 /* Compact "more services" chips */
 .chip-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 40px; }
