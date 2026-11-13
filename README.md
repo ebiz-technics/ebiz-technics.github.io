@@ -1,6 +1,6 @@
 # E-BIZ Technics — Corporate Website
 
-**Empowering Digital Excellence.** A fully static, multi-page company website built with HTML5, CSS3 and vanilla JavaScript. There's no build step, backend or framework, so it's ready for GitHub Pages as-is.
+**Secure. Smart. Scalable.** The website of E-BIZ Technics, a Sri Lankan IT solutions and consulting company (cybersecurity, software engineering, and data science, analytics & AI). A fully static, multi-page company website built with HTML5, CSS3 and vanilla JavaScript. There's no build step, backend or framework, so it's ready for GitHub Pages as-is.
 
 ## Features
 
@@ -20,7 +20,7 @@
 ```
 ├── index.html          Home
 ├── about.html          About us (story, mission, values, timeline, team, certifications)
-├── services.html       All 15 services (7 core in detail + 8 in an accordion)
+├── services.html       Three service areas in detail + support & maintenance
 ├── solutions.html      Industries (tabs) + packaged solutions
 ├── careers.html        Culture, benefits, open roles
 ├── contact.html        Form, details, hours, map, FAQ
@@ -55,8 +55,7 @@
 
 | What | Where |
 |---|---|
-| Domain `https://www.ebiztechnics.com` | Search and replace in all `.html` files, `robots.txt` and `sitemap.xml` (used for the canonical, Open Graph and sitemap URLs) |
-| Address, phone, emails | Search for `Galle Road`, `+94 11 234 5678` and `@ebiztechnics.com` |
+| Address and phone | Search for `Galle Road` and `+94 11 234 5678` (the site uses `www.ebtech.lk` and `info@ebtech.lk`) |
 | **Contact form** | Create a free form at [formspree.io](https://formspree.io), then replace `YOUR_FORM_ID` in `contact.html`. Until you do, the form runs in demo mode (it shows the success screen but doesn't send anything). |
 | Map | In `contact.html`, change the `q=` value in the Google Maps iframe, or paste the embed URL from Google Maps → Share → Embed |
 | Stats, testimonials, case studies, team, certifications, client logos | These are sample content. Replace them with real names and figures. |

@@ -1,7 +1,7 @@
 /* E-BIZ Technics — service worker
    Caches the site's own files so pages keep working offline after the first visit.
    Bump CACHE_VERSION whenever you deploy changes so visitors get the new files. */
-const CACHE_VERSION = 'ebiz-v1';
+const CACHE_VERSION = 'ebiz-v2';
 const CORE_FILES = [
   './', 'index.html', 'about.html', 'services.html', 'solutions.html', 'careers.html', 'contact.html', '404.html',
   'css/styles.css', 'js/main.js', 'assets/favicon.svg', 'site.webmanifest'

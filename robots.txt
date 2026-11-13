@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ebiztechnics.com/sitemap.xml
+Sitemap: https://www.ebtech.lk/sitemap.xml
