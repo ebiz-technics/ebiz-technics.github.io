@@ -1,6 +1,6 @@
-# E-BIZ Technics — Corporate Website
+# E-Biz Technics — Corporate Website
 
-**Secure. Smart. Scalable.** The website of E-BIZ Technics, a Sri Lankan IT solutions and consulting company (cybersecurity, software engineering, and data science, analytics & AI). A fully static, multi-page company website built with HTML5, CSS3 and vanilla JavaScript. There's no build step, backend or framework, so it's ready for GitHub Pages as-is.
+**Secure. Smart. Scalable.** The website of E-Biz Technics, a Sri Lankan IT solutions and consulting company (cybersecurity, software engineering, and data science, analytics & AI). A fully static, multi-page company website built with HTML5, CSS3 and vanilla JavaScript. There's no build step, backend or framework, so it's ready for GitHub Pages as-is.
 
 ## Features
 
@@ -27,7 +27,7 @@
 ├── 404.html            Custom "page not found"
 ├── css/styles.css      All styles (design tokens at the top)
 ├── js/main.js          All interactivity (one file, modular functions)
-├── assets/             favicon.svg, apple-touch-icon.png, icon-512.png, og-image.png
+├── assets/             logo (mark + full, light/dark), favicons, app icons, og-image.png
 ├── sw.js               Service worker (offline cache)
 ├── site.webmanifest    PWA manifest
 ├── sitemap.xml / robots.txt

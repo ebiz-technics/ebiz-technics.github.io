@@ -1,5 +1,5 @@
 /* ==========================================================================
-   E-BIZ Technics — Main Script (vanilla JS, no build step)
+   E-Biz Technics — Main Script (vanilla JS, no build step)
    --------------------------------------------------------------------------
    Every feature is wrapped in its own function and only runs if the related
    markup exists on the page, so this one file serves every page.
@@ -451,7 +451,7 @@
         if (notConfigured) {
           // Demo mode: no Formspree ID yet. Simulate a successful send.
           await new Promise((r) => setTimeout(r, 1200));
-          console.info('[E-BIZ] Contact form is in demo mode. Add your Formspree form ID in contact.html to receive real emails.');
+          console.info('[E-Biz] Contact form is in demo mode. Add your Formspree form ID in contact.html to receive real emails.');
         } else {
           const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
           if (!res.ok) throw new Error('Network response was not ok');
