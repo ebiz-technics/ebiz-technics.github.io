@@ -1,5 +1,5 @@
 /* ==========================================================================
-   E-BIZ Technics — Main Stylesheet
+   E-Biz Technics — Main Stylesheet
    --------------------------------------------------------------------------
    Table of contents
    01. Design tokens (colors, type, spacing) + light theme overrides
@@ -55,6 +55,9 @@
   --glow: 0 0 0 1px rgba(34, 211, 238, 0.35), 0 12px 40px rgba(34, 211, 238, 0.18);
 
   --gradient-brand: linear-gradient(135deg, var(--cyan) 0%, var(--indigo) 55%, var(--purple) 100%);
+  /* The five colours of the E-Biz star logo */
+  --logo-teal: #7ac5cf; --logo-orange: #f58b68; --logo-green: #c4d96b; --logo-yellow: #f1c753; --logo-pink: #dd6691; --logo-navy: #0a2b48;
+  --gradient-logo: linear-gradient(90deg, var(--logo-teal), var(--logo-green), var(--logo-yellow), var(--logo-orange), var(--logo-pink));
   --gradient-text: linear-gradient(90deg, #67e8f9 0%, #a5b4fc 50%, #c4b5fd 100%);
 
   /* Type */
@@ -87,7 +90,7 @@
   --text: #334155;
   --text-muted: #64748b;
   --text-soft: #475569;
-  --heading: #0f172a;
+  --heading: #0a2b48;
   --header-bg: rgba(248, 250, 252, 0.8);
   --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.08);
@@ -205,7 +208,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .site-header.is-scrolled { background: var(--header-bg); backdrop-filter: saturate(160%) blur(16px); -webkit-backdrop-filter: saturate(160%) blur(16px); border-color: var(--border); box-shadow: var(--shadow-sm); --header-h: 68px; }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: 100%; }
 .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--heading); letter-spacing: -0.02em; }
-.logo-mark { width: 40px; height: 40px; flex-shrink: 0; transition: transform var(--t); }
+.logo-mark { width: 44px; height: 44px; flex-shrink: 0; object-fit: contain; transition: transform var(--t); }
 .logo:hover .logo-mark { transform: rotate(-8deg) scale(1.05); }
 .logo span.accent { color: var(--cyan); }
 .logo small { display: block; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-top: 2px; }
@@ -643,9 +646,12 @@ textarea.input { min-height: 150px; resize: vertical; }
 /* 15. FOOTER ------------------------------------------------------------- */
 .site-footer { background: var(--navy-950); color: #94a3b8; padding: 88px 0 0; position: relative; overflow: hidden; }
 [data-theme="light"] .site-footer { background: #0b1324; }
-.site-footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--gradient-brand); opacity: 0.6; }
+.site-footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--gradient-logo); opacity: 0.85; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.3fr; gap: 48px; }
 .site-footer .logo { color: #fff; }
+.footer-logo { display: inline-block; }
+.footer-logo img { width: 190px; height: auto; transition: transform var(--t); }
+.footer-logo:hover img { transform: scale(1.03); }
 .site-footer h4 { color: #fff; font-size: 0.95rem; margin-bottom: 20px; letter-spacing: 0.02em; }
 .footer-about p { margin: 18px 0 22px; font-size: 0.94rem; max-width: 320px; }
 .footer-links li + li { margin-top: 11px; }
@@ -676,7 +682,7 @@ textarea.input { min-height: 150px; resize: vertical; }
 .js [data-reveal].is-visible { opacity: 1; transform: none; }
 
 /* Scroll progress bar */
-.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; z-index: 200; background: var(--gradient-brand); transform-origin: 0 50%; transform: scaleX(0); }
+.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; z-index: 200; background: var(--gradient-logo); transform-origin: 0 50%; transform: scaleX(0); }
 
 /* Back to top with ring progress */
 .back-to-top { position: fixed; right: 24px; bottom: 24px; z-index: 90; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--surface-solid); border: 1px solid var(--border-strong); color: var(--heading); box-shadow: var(--shadow-md); opacity: 0; visibility: hidden; transform: translateY(16px); transition: opacity var(--t), transform var(--t), visibility var(--t), color var(--t-fast); }
